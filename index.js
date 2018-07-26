@@ -9,8 +9,6 @@ function updateDriverWithKeyAndValue(driver, key, value){
 }
 
 function destructivelyUpdateDriverWithKeyAndValue(drv,key,value){
-  console.log(driver);
-  Object.assign(drv,{key:value});
-  console.log(drv);
+  drv[key]=value;
   return drv;
 }
