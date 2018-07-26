@@ -16,4 +16,5 @@ function destructivelyUpdateDriverWithKeyAndValue(drv,key,value){
 function deleteFromDriverByKey(drv,key){
   newDrv=Object.assign(drv);
   delete newDrv.key;
+  return newDrv;
 }
